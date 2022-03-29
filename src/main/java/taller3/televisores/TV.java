@@ -3,14 +3,6 @@ package taller3;
 public class TV {
 	
 	private Marca marca;
-	public Marca getMarca() {
-		return marca;
-	}
-
-	public void setMarca(Marca marca) {
-		this.marca = marca;
-	}
-
 	public Control control;
 	public int precio;
 	public int canal;
@@ -109,6 +101,14 @@ public class TV {
 
 	public void setVolumen(int volumen) {
 		this.volumen = volumen;
+	}
+
+	public Marca getMarca() {
+		return marca;
+	}
+
+	public void setMarca(Marca marca) {
+		this.marca = marca;
 	}
 	
 	

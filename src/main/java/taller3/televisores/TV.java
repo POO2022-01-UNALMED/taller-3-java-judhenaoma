@@ -35,7 +35,7 @@ public class TV {
 		this.estado = true;
 	}
 	
-	public void TurnOff() {
+	public void turnOff() {
 		this.estado = false;
 	}
 	

@@ -17,9 +17,6 @@ public class Control {
 		this.tv.estado = true;
 	}
 	
-	public void TurnOff() {
-		this.tv.estado = false;
-	}
 	
 public void canalUp() {
 		

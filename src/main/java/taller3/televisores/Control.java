@@ -58,6 +58,12 @@ public void canalUp() {
 	
 	
 	public void setCanal(int canal) {
+		
+		if(this.tv.estado && canal < 120 && canal > 1) {
+			
+			this.tv.canal = canal;
+			
+		}
 		this.tv.canal = canal;
 	}
 	

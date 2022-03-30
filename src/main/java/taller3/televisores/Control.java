@@ -14,57 +14,39 @@ public class Control {
 	
 	
 	public void turnOn() {
-		this.tv.estado = true;
+		this.tv.turnOn();
 	}
 	
 	
-public void canalUp() {
-		
-		if(this.tv.estado && this.tv.canal < 120 && this.tv.canal > 1) {
-			
-			this.tv.canal++;
-			
+	public void canalUp() {
+			 
+			 this.tv.canalUp();
 		}
-		
-		
-		
-	}
-	
+					
+					
+					
 	public void canalDown() {
 		
-		if(this.tv.estado && this.tv.canal < 120 && this.tv.canal > 1) {
-					
-					this.tv.canal--;
-					
-				}
-		
+		this.tv.canalDown();;
 		
 	}
 	
 	public void volumenUp() {
 		
-		if(this.tv.estado && this.tv.volumen < 7 && this.tv.volumen > 0) {
-			this.tv.volumen++;
-		}
+		this.tv.volumenUp();
 		
 		
 	}
 	
 	public void volumenDown() {
-		if(this.tv.estado && this.tv.volumen < 7 && this.tv.volumen > 0) {
-			this.tv.volumen--;
-		}
+		this.tv.volumenDown();
 	}
 	
 	
 	public void setCanal(int canal) {
 		
-		if(this.tv.estado && canal < 120 && canal > 1) {
-			
-			this.tv.canal = canal;
-			
-		}
-		this.tv.canal = canal;
+		this.tv.setCanal(canal);
+	
 	}
 	
 	public void setTv(TV tv) {
@@ -77,27 +59,29 @@ public void canalUp() {
 	}
 	
 	public int getPrecio() {
-		return this.tv.precio;
+		return this.tv.getPrecio();
 	}
 
 	public void setPrecio(int precio) {
-		this.tv.precio = precio;
+		this.tv.setPrecio(precio);
 	}
 
 	public int getCanal() {
-		return this.tv.canal;
+		return this.tv.getCanal();
 	}
 	
 	public int getVolumen() {
-		return this.tv.volumen;
+		return this.tv.getVolumen();
 	}
 
 	public void setVolumen(int volumen) {
-		this.tv.volumen = volumen;
+		this.tv.setVolumen(volumen);
 	}
 	
 	public void turnOff() {
-		this.tv.estado = false;
+		this.tv.turnOff();
 	}
+	
+	
 
 };

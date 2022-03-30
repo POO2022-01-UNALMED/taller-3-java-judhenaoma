@@ -45,12 +45,12 @@ public class TV {
 	}
 	           
 	public void canalUp() {
-		
-		if(this.estado && this.canal < 120 && this.canal > 1) {
-			
-			this.canal++;
-			
-		}
+		if (this.estado == true) {
+			if(this.canal < 120 && this.canal >= 1) {
+				
+				this.canal = this.canal + 1;
+				
+			}}
 		
 		
 		
@@ -95,12 +95,13 @@ public class TV {
 	}
 
 	public void setCanal(int canal) {
-			if(this.estado == true && canal <= 120 && canal >= 1) {
+			if(this.estado == true) { 
+				if (canal <= 120 && canal >= 1) {
 				
 				this.canal = canal;
 						
 						
-			}
+			}}
 		
 	}
 
